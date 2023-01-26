@@ -24,7 +24,7 @@ export default function Acceuil() {
   },[]);
   
   return (
-    <div className=" h-full lg:h-screen w-full relative overflow-x-hidden">
+    <div className=" lg:h-screen w-full relative overflow-x-hidden">
       <div className=" px-[20px] flex justify-between items-center fixed w-full xl:hidden py-5 z-50 header">
            <div className="w-full flex space-x-5 items-center  ">
                     <img src="images/photo2.png" className="w-[50px] h-[50px] rounded-full bg-yellow-500 border-4 object-contain  border-white" />
@@ -58,7 +58,7 @@ export default function Acceuil() {
             </div>
           </div>
           <div className=" w-full lg:w-1/2 flex items-center justify-center">
-                <img src="images/photo3.png" className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] lg:w-[400px] lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]  rounded-full bg-Pgreen object-contain " />
+                <img src="images/photo3.png" className="w-[270px] h-[270px] sm:w-[400px] sm:h-[400px] lg:w-[400px] lg:h-[400px] 2xl:w-[600px] 2xl:h-[600px]  rounded-full bg-Pgreen object-contain " />
           </div>
         </div>
       </div>

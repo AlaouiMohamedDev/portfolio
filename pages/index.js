@@ -18,6 +18,33 @@ export default function Home() {
   
   if (!mounted) return null;
   const currentTheme = theme === 'system' ? systemTheme : theme;
+
+
+  //Cursor 
+
+  /*
+
+    //follow cursor on mousemove
+    document.addEventListener("mousemove", (e) => {
+      const cursor = document.querySelector(".cursor");
+      var timeout;
+      let x = e.pageX;
+      let y = e.pageY;
+
+      cursor.style.top = y + "px";
+      cursor.style.left = x + "px";
+      cursor.style.display = "flex";
+      //cursor effects when mouse stopped
+      function mouseStopped(){
+        cursor.style.display = "none";
+      }
+      clearTimeout(timeout);
+      timeout = setTimeout(mouseStopped, 5000);
+    });*/
+
+    
+
+
   return (
     <div className="w-full flex bg-white  dark:bg-PDark m-0 p-0 font-poppins relative">
 
@@ -36,6 +63,12 @@ export default function Home() {
           <i onClick={() => setTheme('dark')}  className='z-10 transition ease-in delay-75 bx bxs-moon cursor-pointer w-12 h-12 justify-center flex items-center  text-2xl bg-Pblack text-white rounded-full fixed top-24 xl:top-10 right-5'></i>
         )
       }
+    
+      {/*
+      <div className="cursor bg-Pgreen/30 flex items-center justify-center fixed z-100 w-[50px] h-[50px] rounded-full">
+        <div className="bg-Pgreen w-[10px] h-[10px] rounded-full"></div>
+      </div>
+      */}
       <Sidebar />
       
       <div className='xl:ml-[250px] relative'>
